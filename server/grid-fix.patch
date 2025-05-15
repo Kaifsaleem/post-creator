@@ -1,0 +1,26 @@
+diff --git a/src/App.tsx b/src/App.tsx
+index 62d1c61..6c2eefb 100644
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -1,11 +1,10 @@
+ import { useState, useEffect } from 'react';
+ import { 
+-  Box, Container, CssBaseline, AppBar, Toolbar, Typography, Paper, Grid, 
++  Box, Container, CssBaseline, AppBar, Toolbar, Typography, Paper, 
+   TextField, Button, Card, CardContent, CardActions, IconButton, Snackbar, 
+   Alert, CircularProgress, Divider, ThemeProvider, createTheme, 
+   Switch, FormControlLabel, Dialog, DialogTitle, DialogContent, 
+-  DialogActions, Avatar, useMediaQuery, InputAdornment
+-} from '@mui/material';
++  DialogActions, InputAdornment } from '@mui/material';
+ import { 
+   Delete as DeleteIcon, Link as LinkIcon, Brightness4 as DarkModeIcon,
+   Brightness7 as LightModeIcon, Person as PersonIcon, LockOutlined as LockIcon,
+@@ -13,6 +12,7 @@ import {
+ } from '@mui/icons-material';
+ import axios from 'axios';
+ import './App.css';
++import Grid from '@mui/material/Unstable_Grid2';
+ 
+ interface Link {
+   _id: string;
